@@ -107,7 +107,7 @@ This project addresses these challenges by building an AI-assisted resource disc
 
 ## 🧠 System Architecture
 
-text
+```text
 User Input
    ↓
 AI Interpretation (Layer 1)
@@ -125,85 +125,114 @@ Pending Table
 Admin Review
    ↓
 Approved → Live Database
+```
 
-🗂️ Data Structure & System Design
+---
+
+## 🗂️ Data Structure & System Design
 
 The application uses a relational database consisting of:
 
-organizations → provider-level data
-services → individual services tied to organizations
-cities → geographic mapping
-categories → service classification
-submitted_resources → pending user submissions
-📊 Executive Summary
+- **organizations** → provider-level data
+- **services** → individual services tied to organizations
+- **cities** → geographic mapping
+- **categories** → service classification
+- **submitted_resources** → pending user submissions
+
+---
+
+## 📊 Executive Summary
 
 This project demonstrates how AI can be integrated with structured data systems to improve accessibility and usability of information.
 
 Key takeaways:
 
-AI reduces friction in search by translating natural language into structured queries
-Combining AI with a relational database enables both precision and flexibility
-A controlled review pipeline ensures data integrity while allowing user contributions
-The system simulates real-world backend workflows including ingestion, validation, and retrieval
-🔍 Insights Deep Dive
-1. AI Interpretation Layer
-Converts unstructured input into usable database filters
-Handles ambiguity better than keyword-only systems
-Improves accessibility for non-technical users
-2. Query & Retrieval System
-SQL-based filtering ensures accurate results
-Supports multi-parameter queries
-Provides consistent, explainable outputs
-3. AI Answer Layer
-Uses only retrieved data to reduce hallucination risk
-Transforms raw results into actionable guidance
-Acts as a decision-support layer
-4. Data Governance Pipeline
-Prevents duplicate entries
-Separates public vs pending data
-Introduces admin-controlled approval
-💡 Recommendations
+- AI reduces friction in search by translating natural language into structured queries
+- Combining AI with a relational database enables both precision and flexibility
+- A controlled review pipeline ensures data integrity while allowing user contributions
+- The system simulates real-world backend workflows including ingestion, validation, and retrieval
+
+---
+
+## 🔍 Insights Deep Dive
+
+### 1. AI Interpretation Layer
+
+- Converts unstructured input into usable database filters
+- Handles ambiguity better than keyword-only systems
+- Improves accessibility for non-technical users
+
+### 2. Query & Retrieval System
+
+- SQL-based filtering ensures accurate results
+- Supports multi-parameter queries
+- Provides consistent, explainable outputs
+
+### 3. AI Answer Layer
+
+- Uses only retrieved data to reduce hallucination risk
+- Transforms raw results into actionable guidance
+- Acts as a decision-support layer
+
+### 4. Data Governance Pipeline
+
+- Prevents duplicate entries
+- Separates public vs pending data
+- Introduces admin-controlled approval
+
+---
+
+## 💡 Recommendations
 
 Based on this system, future improvements could include:
 
-Implementing a smarter relevance ranking algorithm
-Adding urgency detection, such as crisis vs general support
-Migrating to a cloud database such as PostgreSQL or Supabase
-Introducing authentication for admin vs public users
-Deploying the application for public access
-⚠️ Assumptions and Caveats
-The dataset is limited and does not represent a complete real-world directory
-AI responses are restricted to available database results
-No real-time API integrations are included
-Admin authentication is simplified for demonstration
-🧰 Tech Stack
-Python
-Streamlit
-SQLite
-OpenAI API
-Pandas
-⚙️ Setup Instructions
+- Implementing a smarter relevance ranking algorithm
+- Adding urgency detection, such as crisis vs general support
+- Migrating to a cloud database such as PostgreSQL or Supabase
+- Introducing authentication for admin vs public users
+- Deploying the application for public access
 
-Install dependencies:
+---
 
-pip install -r requirements.txt
+## ⚠️ Assumptions and Caveats
 
-Create a .env file:
+- The dataset is limited and does not represent a complete real-world directory
+- AI responses are restricted to available database results
+- No real-time API integrations are included
+- Admin authentication is simplified for demonstration
 
-OPENAI_API_KEY=your_api_key_here
+---
 
-Run the app:
+## 🧰 Tech Stack
 
-streamlit run app.py
-📌 Notes
-The database file is excluded from version control
-AI responses are based only on available resource data
-This project demonstrates full-stack + AI system design principles
-🚀 Future Enhancements
-Cloud deployment with Streamlit Cloud
-Real-time data ingestion
-Advanced ranking / recommendation engine
-Expanded geographic coverage
-👤 Author
+- Python
+- Streamlit
+- SQLite
+- OpenAI API
+- Pandas
+
+---
+
+
+---
+
+## 📌 Notes
+
+- The database file is excluded from version control
+- AI responses are based only on available resource data
+- This project demonstrates full-stack + AI system design principles
+
+---
+
+## 🚀 Future Enhancements
+
+- Cloud deployment with Streamlit Cloud
+- Real-time data ingestion
+- Advanced ranking / recommendation engine
+- Expanded geographic coverage
+
+---
+
+## 👤 Author
 
 Built as part of a hands-on project exploring AI + data systems and real-world application design.
