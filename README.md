@@ -107,7 +107,7 @@ This project addresses these challenges by building an AI-assisted resource disc
 
 ## 🧠 System Architecture
 
-```text
+text
 User Input
    ↓
 AI Interpretation (Layer 1)
