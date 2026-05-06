@@ -125,6 +125,7 @@ Pending Table
 Admin Review
    ↓
 Approved → Live Database
+```
 
 🗂️ Data Structure & System Design
 The application uses a relational database consisting of:
