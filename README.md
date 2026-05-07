@@ -20,7 +20,7 @@ From a data perspective, this system simulates a real-world environment where:
 ### 🔍 Search + AI Results
 Users can search naturally using phrases like:
 
-> “housing help for LGBTQ youth in St. Louis”
+> “mental health help for LGBTQ youth in St. Louis”
 
 The AI interpretation layer converts natural language into structured database filters before querying the database.
 
